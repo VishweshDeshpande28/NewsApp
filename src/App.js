@@ -10,7 +10,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Stories from './components/Stories';
 import Footer from './components/Footer';
 
-
 function Newsapp () {
     const [show, setShow] = useState(true);
     const handleClose = () => setShow(false);
@@ -33,6 +32,7 @@ function Newsapp () {
     </>
       <ProgressBar />
         <Navbar1 />
+        <br />
         <News />
         <Stories />
         <Footer />

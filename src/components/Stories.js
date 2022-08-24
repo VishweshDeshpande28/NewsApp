@@ -5,7 +5,7 @@ function Stories() {
   return (
     <Container>
 
-    <h3>NewsMonkey - Top Stories</h3>
+    <h3>NewsByte - Top Stories</h3>
    <div className="my-3">
    <div className='row'>
    <div className='col'>

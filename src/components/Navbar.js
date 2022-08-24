@@ -10,7 +10,7 @@ function Navbar1() {
     <>
  <Navbar bg="dark" expand="lg" variant='dark' >
       <Container fluid>
-        <Navbar.Brand href="/">News Monkey</Navbar.Brand>
+        <Navbar.Brand href="/">NewsByte</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
