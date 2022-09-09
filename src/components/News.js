@@ -35,8 +35,8 @@ export class News extends React.Component {
       <>
       <Container>
         <h2>NewsByte - Top Headlines</h2>
-      </Container>
-      <Container>
+      
+      <div class="d-flex align-content-stretch flex-wrap">
         {this.state.cardData.map((articles) => {
           return (
             
@@ -58,6 +58,7 @@ export class News extends React.Component {
             
           );
         })}
+        </div>
         </Container>
       </>
     );

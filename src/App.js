@@ -30,6 +30,7 @@ function Newsapp () {
         </Modal.Footer>
       </Modal>
     </>
+    
       <ProgressBar />
         <Navbar1 />
         <br />
