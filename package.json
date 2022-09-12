@@ -6,7 +6,6 @@
     "@callstack/react-theme-provider": "^3.0.7",
     "@chakra-ui/popover": "^2.0.8",
     "@chakra-ui/react": "^2.2.6",
-    "@emailjs/browser": "^3.7.0",
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "@headlessui/react": "^1.6.6",
@@ -20,7 +19,6 @@
     "firebase": "^9.9.3",
     "framer-motion": "^7.0.0",
     "json-server": "^0.4.2",
-    "mdb-ui-kit": "^4.4.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
@@ -29,7 +27,6 @@
     "react-scroll-progress-bar": "^1.1.13",
     "react-switch": "^7.0.0",
     "react-toggle-button": "^2.2.0",
-    "tailwindcss": "^3.1.8",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

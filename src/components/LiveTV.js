@@ -1,20 +1,15 @@
 import React from 'react'
-import Navbar1 from '../Navbar'
-import Footer from '../Footer'
 import { Col, Row } from 'react-bootstrap'
 
-function LiveTV() {
+const LiveTV = () => {
   return (
-    <div>
-    <Navbar1/>
-
-
+    <>
 
     <div className='container'>
     <>
-      <h1>
-        LiveTV by NewsMonkey
-      </h1>
+      <h3>
+        LiveTV by NewsByte
+      </h3>
       <Row>
       <Col>
       <iframe class="responsive-iframe" width="500" height="320" src="https://www.youtube.com/embed/_sCuz36qPzg?controls=0" title="YouTube video player" frameborder="1" allow="accelerometer; encrypted-media; gyroscope" allowfullscreen></iframe>
@@ -32,13 +27,8 @@ function LiveTV() {
       </Row>
       </>
       </div>
-
-
-
-
-      <Footer />
-    </div>
+      </>
   )
 }
 
-export default LiveTV
+export default LiveTV;

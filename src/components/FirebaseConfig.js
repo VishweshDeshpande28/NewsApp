@@ -16,7 +16,7 @@ function StartFirebase(){
     appId: "1:211921173493:web:ffc3764e1c615f10ad3ebc"
   };
 
-  const app = initializeApp(firebaseConfig);
+  const Newsapp = initializeApp(firebaseConfig);
   return getDatabase(News);
 }
 
