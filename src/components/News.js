@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { Container, Col, Row } from "react-bootstrap";
+import { Container, Col, Row, Button } from "react-bootstrap";
 import Accordion from "react-bootstrap/Accordion";
 import StartFirebase from "./FirebaseConfig";
 import { ref, onValue } from "firebase/database";
@@ -51,6 +51,7 @@ export class News extends React.Component {
               <Accordion>
                   <Accordion.Header><b>About This News</b></Accordion.Header>
                   <Accordion.Body>{articles.data.content}</Accordion.Body>
+                  <a href={articles.data.link} class="btn btn-primary active" role="button" aria-pressed="true" style={{width:"20 rem"}}>Read More..</a>
               </Accordion>
             </Card>
             </Col>

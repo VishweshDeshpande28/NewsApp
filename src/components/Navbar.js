@@ -1,3 +1,4 @@
+import { Outlet } from '@mui/icons-material';
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
@@ -8,7 +9,7 @@ import Navbar from 'react-bootstrap/Navbar';
 function Navbar1() {
   return (
     <>
- <Navbar bg="dark" expand="lg" variant='dark' >
+ <Navbar bg="black" expand="lg" variant='dark' >
       <Container fluid>
         <Navbar.Brand href="/">NewsByte</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -17,18 +18,19 @@ function Navbar1() {
             className="me-auto my-2 my-lg-0"
             style={{ maxHeight: '100px' }}
             navbarScroll>
-            <Nav.Link href="#LiveTV">LIVE TV</Nav.Link>
-            <Nav.Link href="#Latest">LATEST</Nav.Link>
-            <Nav.Link href="#India">INDIA</Nav.Link>
-            <Nav.Link href="#Covid">COVID</Nav.Link>
-            <Nav.Link href="#Opinion">OPINION</Nav.Link>
-            <Nav.Link href="#Video">VIDEO</Nav.Link>
-            <Nav.Link href="#Cities">CITIES</Nav.Link>
-            <Nav.Link href="#World">WORLD</Nav.Link>
-            <Nav.Link href="#Offbeat">OFFBEAT</Nav.Link>
-            <Nav.Link href="#Trends">TRENDS</Nav.Link>
-            <Nav.Link href="#People">PEOPLE</Nav.Link>
+            <Nav.Link to="./navtabs/LiveTV.js">LIVE TV</Nav.Link>
+            <Nav.Link to="./navtabs/Latest.js">LATEST</Nav.Link>
+            <Nav.Link to="./navtabs/India.js">INDIA</Nav.Link>
+            <Nav.Link to="./navtabs/Covid.js">COVID</Nav.Link>
+            <Nav.Link to="./navtabs/Opinion.js">OPINION</Nav.Link>
+            <Nav.Link to="./navtabs/Video.js">VIDEO</Nav.Link>
+            <Nav.Link to="./navtabs/Cities.js">CITIES</Nav.Link>
+            <Nav.Link to="./navtabs/World.js">WORLD</Nav.Link>
+            <Nav.Link to="./navtabs/Offbeat.js">OFFBEAT</Nav.Link>
+            <Nav.Link to="./navtabs/Trends.js">TRENDS</Nav.Link>
+            <Nav.Link to="./navtabs/People.js">PEOPLE</Nav.Link>
           </Nav>
+          <Outlet/>
           <Form className="d-flex">
             <Form.Control
               type="search"
