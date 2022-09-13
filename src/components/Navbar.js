@@ -83,7 +83,6 @@ function Navbar1(){
           <div>
             <Routes>
               <Route exact path="/LiveTV" element={<LiveTV/>} />
-
               <Route exact path="/People" element={<People/>} />
               
               <Route exact path="/Cities" element={<Cities />} />
@@ -91,7 +90,6 @@ function Navbar1(){
               <Route exact path="/Trends" element={<Trends />} />
 
               <Route exact path="/Trends" element={<Trends />} />
-              
               <Route exact path="/Offbeat" element={<Offbeat />} />
 
               <Route exact path="/World" element={<World />} />

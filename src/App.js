@@ -14,11 +14,13 @@ import { useEffect } from 'react';
 
 
 function Newsapp () {
+
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
-    useEffect(() => {
-      setTimeout(() => setShow(true), 3000);
-    });
+    useEffect(() =>{
+      setTimeout(() => setShow(true),80000);
+    }, []);
+    
 
     return (
       <div>
@@ -38,11 +40,12 @@ function Newsapp () {
     <>
     <BrowserRouter>
       <Navbar1 />
-      </BrowserRouter>
       <ProgressBar />
       <News />
       <Stories />
+
       <Footer />
+      </BrowserRouter>
 
     </>
       </div>

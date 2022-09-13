@@ -5,6 +5,7 @@ import Accordion from "react-bootstrap/Accordion";
 import StartFirebase from "./FirebaseConfig";
 import { ref, onValue } from "firebase/database";
 import "./Cardcss.css";
+import Spinner from "./Spinner";
 
 const db = StartFirebase();
 
@@ -34,7 +35,9 @@ export class News extends React.Component {
     return (
       <>
       <Container>
+      
         <h2>NewsByte - Top Headlines</h2>
+        {<Spinner/>}
       
       <div class="d-flex align-content-stretch flex-wrap">
         {this.state.cardData.map((articles) => {
@@ -51,7 +54,7 @@ export class News extends React.Component {
               <Accordion>
                   <Accordion.Header><b>About This News</b></Accordion.Header>
                   <Accordion.Body>{articles.data.content}</Accordion.Body>
-                  <a href={articles.data.link} class="btn btn-primary active" role="button" aria-pressed="true" style={{width:"20 rem"}}>Read More..</a>
+                  <a href={articles.data.link} class="btn btn-primary active display-flex" role="button" aria-pressed="true" style={{width:"20 rem"}}>Read More..</a>
               </Accordion>
             </Card>
             </Col>
